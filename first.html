@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Color Selector</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Outfit Color Based on Your Skin Tone</h1>
+        <p>Select your skin tone to get the best outfit color suggestions!</p>
+        
+        <!-- Skin tone selection -->
+        <div class="form-group">
+            <label for="skinTone">Select Your Skin Tone:</label>
+            <select id="skinTone">
+                <option value="fair">Fair</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+
+        <!-- Suggested colors -->
+        <div class="suggestion">
+            <h2>Recommended Outfit Colors:</h2>
+            <ul id="colorSuggestions">
+                <!-- Colors will be listed here -->
+            </ul>
+        </div>
+
+        <button onclick="getColorSuggestions()">Get Color Suggestions</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
